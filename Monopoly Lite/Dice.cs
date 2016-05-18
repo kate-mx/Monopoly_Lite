@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace Monopoly
 {//olololol
     // ololololo2
+       // ololololo3
     class Dice
     {
         // Игральная кость
