@@ -1,0 +1,8 @@
+D:\Users\Екатерина\Учеба\4й семестр\ООП\Monopoly Lite\Monopoly Lite\bin\Debug\Monopoly Lite.exe.config
+D:\Users\Екатерина\Учеба\4й семестр\ООП\Monopoly Lite\Monopoly Lite\bin\Debug\Monopoly Lite.exe
+D:\Users\Екатерина\Учеба\4й семестр\ООП\Monopoly Lite\Monopoly Lite\bin\Debug\Monopoly Lite.pdb
+D:\Users\Екатерина\Учеба\4й семестр\ООП\Monopoly Lite\Monopoly Lite\obj\Debug\Monopoly Lite.csprojResolveAssemblyReference.cache
+D:\Users\Екатерина\Учеба\4й семестр\ООП\Monopoly Lite\Monopoly Lite\obj\Debug\Monopoly_Lite.Properties.Resources.resources
+D:\Users\Екатерина\Учеба\4й семестр\ООП\Monopoly Lite\Monopoly Lite\obj\Debug\Monopoly Lite.csproj.GenerateResource.Cache
+D:\Users\Екатерина\Учеба\4й семестр\ООП\Monopoly Lite\Monopoly Lite\obj\Debug\Monopoly Lite.exe
+D:\Users\Екатерина\Учеба\4й семестр\ООП\Monopoly Lite\Monopoly Lite\obj\Debug\Monopoly Lite.pdb
