@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Monopoly
-{
+{//olololol
     class Dice
     {
         // Игральная кость
