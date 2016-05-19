@@ -9,3 +9,8 @@ D:\Users\Екатерина\Учеба\4й семестр\ООП\Monopoly Lite\M
 C:\Users\user\Desktop\study\Курсовая\т\Monopoly Lite\bin\Debug\Monopoly Lite.exe.config
 C:\Users\user\Desktop\study\Курсовая\т\Monopoly Lite\obj\Debug\Monopoly Lite.exe
 C:\Users\user\Desktop\study\Курсовая\т\Monopoly Lite\obj\Debug\Monopoly Lite.pdb
+C:\Users\user\Desktop\study\Курсовая\т\Monopoly Lite\bin\Debug\Monopoly Lite.exe
+C:\Users\user\Desktop\study\Курсовая\т\Monopoly Lite\bin\Debug\Monopoly Lite.pdb
+C:\Users\user\Desktop\study\Курсовая\т\Monopoly Lite\obj\Debug\Monopoly Lite.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\study\Курсовая\т\Monopoly Lite\obj\Debug\Monopoly_Lite.Properties.Resources.resources
+C:\Users\user\Desktop\study\Курсовая\т\Monopoly Lite\obj\Debug\Monopoly Lite.csproj.GenerateResource.Cache

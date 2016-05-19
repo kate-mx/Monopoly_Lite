@@ -324,72 +324,184 @@ namespace Monopoly
         /// <param name="e"></param>
         private void btnNewGame_Click(object sender, EventArgs e)
         {
-            QPlayersIn.ReadOnly = true;
+            bool checkClick = true; //проверка, совершено ли было нажатие
+
 
             colorArray[0] = Color.Green;
             colorArray[1] = Color.Blue;
             colorArray[2] = Color.Red;
             colorArray[3] = Color.Purple;
 
-            try
+            if (checkClick == true && QPlayersIn.ReadOnly == true)
             {
-                QPlayers = Int32.Parse(QPlayersIn.Text);
+                DialogResult dialog = MessageBox.Show("Вы уверены, что хотите завершить текущую игру?", "Завершение текущей игры", MessageBoxButtons.YesNo);
+                if (dialog == System.Windows.Forms.DialogResult.Yes)
+                {
+                    backToStart();
+                    btnNewGame.Text = "New Game";
+                }
 
-                if (QPlayers <= 1)
-                    MessageBox.Show("Введите число в интервале 2 - 4!");
-
-                playerArray = new Player[QPlayers];
-                for (int i = 0; i < QPlayers; i++)
-                    playerArray[i] = new Player();
             }
-            catch (FormatException)
+            else
             {
-                MessageBox.Show("Пожалуйста, введите число в интервале 2 - 4 в поле!");
-                QPlayersIn.ReadOnly = false;
-                return;
+                try
+                {
+                    QPlayers = Int32.Parse(QPlayersIn.Text);
+
+                    if (QPlayers <= 1 || QPlayers >= 5)
+                    {
+                        MessageBox.Show("Введите число в интервале 2 - 4!");
+                        checkClick = false;
+                    }
+                    else
+                    {
+                        QPlayersIn.ReadOnly = true;//отключение выбора кол-ва игроков
+                        btnNewGame.Text = "End Game";
+
+                        playerArray = new Player[QPlayers];
+                        for (int i = 0; i < QPlayers; i++)
+                            playerArray[i] = new Player();
+                    }
+                }
+                catch (FormatException)
+                {
+                    MessageBox.Show("Пожалуйста, введите число в интервале 2 - 4 в поле!");
+                    QPlayersIn.ReadOnly = false;
+                    return;
+                }
+
+                if (checkClick == true)
+                {
+                    // Инициализация игровых клеток 
+                    spaceArray[0] = new GoSpace();
+                    spaceArray[1] = new PropertySpace(25);
+                    spaceArray[2] = new DrawCardSpace();
+                    spaceArray[3] = new PropertySpace(50);
+                    spaceArray[4] = new GameSpace("default");
+                    spaceArray[5] = new PropertySpace(75);
+                    spaceArray[6] = new DrawCardSpace();
+                    spaceArray[7] = new PropertySpace(100);
+                    spaceArray[8] = new GameSpace("default");
+                    spaceArray[9] = new PropertySpace(125);
+                    spaceArray[10] = new DrawCardSpace();
+                    spaceArray[11] = new PropertySpace(150);
+                    spaceArray[12] = new GoToJailSpace();
+                    spaceArray[13] = new PropertySpace(175);
+                    spaceArray[14] = new DrawCardSpace();
+                    spaceArray[15] = new PropertySpace(200);
+
+                    // Включение кнопок с клетками
+                    btnGO.Enabled = true;
+                    btnBalAve.Enabled = true;
+                    btnChance1.Enabled = true;
+                    btnConAve.Enabled = true;
+                    btnJail.Enabled = true;
+                    btnVAAve.Enabled = true;
+                    btnChance2.Enabled = true;
+                    btnNYAve.Enabled = true;
+                    btnFP.Enabled = true;
+                    btnILAve.Enabled = true;
+                    btnChance3.Enabled = true;
+                    btnMG.Enabled = true;
+                    btnGoToJail.Enabled = true;
+                    btnPennAve.Enabled = true;
+                    btnChance4.Enabled = true;
+                    btnBW.Enabled = true;
+
+                    btnRollDice.Visible = true;
+                    updateStats();
+                    changeTurn();
+                    playerPosition();
+                }
             }
-
-            // Инициализация игровых клеток 
-            spaceArray[0] = new GoSpace();
-            spaceArray[1] = new PropertySpace(50);
-            spaceArray[2] = new DrawCardSpace();
-            spaceArray[3] = new PropertySpace(75);
-            spaceArray[4] = new GameSpace("default");
-            spaceArray[5] = new PropertySpace(100);
-            spaceArray[6] = new DrawCardSpace();
-            spaceArray[7] = new PropertySpace(125);
-            spaceArray[8] = new GameSpace("default");
-            spaceArray[9] = new PropertySpace(150);
-            spaceArray[10] = new DrawCardSpace();
-            spaceArray[11] = new PropertySpace(175);
-            spaceArray[12] = new GoToJailSpace();
-            spaceArray[13] = new PropertySpace(200);
-            spaceArray[14] = new DrawCardSpace();
-            spaceArray[15] = new PropertySpace(225);
-
-            // Включение кнопок с клетками
-            btnGO.Enabled = true;
-            btnBalAve.Enabled = true;
-            btnChance1.Enabled = true;
-            btnConAve.Enabled = true;
-            btnJail.Enabled = true;
-            btnVAAve.Enabled = true;
-            btnChance2.Enabled = true;
-            btnNYAve.Enabled = true;
-            btnFP.Enabled = true;
-            btnILAve.Enabled = true;
-            btnChance3.Enabled = true;
-            btnMG.Enabled = true;
-            btnGoToJail.Enabled = true;
-            btnPennAve.Enabled = true;
-            btnChance4.Enabled = true;
-            btnBW.Enabled = true;
-
-            btnRollDice.Visible = true;
-            updateStats();
-            changeTurn();
-            playerPosition();
         }
+
+     
+        
+        /// <summary>
+        /// Возвращает поле в стартовый вид
+        /// </summary>
+        private void backToStart()
+        {
+            //foreach (Control btn in form.Controls)
+            //{
+            //    if (btn.GetType().ToString().IndexOf("Button") > -1)
+            //    {
+            //        Button btn1 = (Button)btn;
+            //        btn1.Text = "lol";
+            //    }
+            //}      
+            btnGO.Text = "";
+            btnBalAve.Text = "";
+            btnChance1.Text = "";
+            btnConAve.Text = "";
+            btnJail.Text = "";
+            btnVAAve.Text = "";
+            btnChance2.Text = "";
+            btnNYAve.Text = "";
+            btnFP.Text = "";
+            btnILAve.Text = "";
+            btnChance3.Text = "";
+            btnMG.Text = "";
+            btnGoToJail.Text = "";
+            btnPennAve.Text = "";
+            btnChance4.Text = "";
+            btnBW.Text = "";
+
+            btnGO.Enabled = false;
+            btnBalAve.Enabled = false;
+            btnChance1.Enabled = false;
+            btnConAve.Enabled = false;
+            btnJail.Enabled = false;
+            btnVAAve.Enabled = false;
+            btnChance2.Enabled = false;
+            btnNYAve.Enabled = false;
+            btnFP.Enabled = false;
+            btnILAve.Enabled = false;
+            btnChance3.Enabled = false;
+            btnMG.Enabled = false;
+            btnGoToJail.Enabled = false;
+            btnPennAve.Enabled = false;
+            btnChance4.Enabled = false;
+            btnBW.Enabled = false;
+
+            btnGO.BackColor = SystemColors.Control;
+            btnBalAve.BackColor = SystemColors.Control;
+            btnChance1.BackColor = SystemColors.Control;
+            btnConAve.BackColor = SystemColors.Control;
+            btnJail.BackColor = SystemColors.Control;
+            btnVAAve.BackColor = SystemColors.Control;
+            btnChance2.BackColor = SystemColors.Control;
+            btnNYAve.BackColor = SystemColors.Control;
+            btnFP.BackColor = SystemColors.Control;
+            btnILAve.BackColor = SystemColors.Control;
+            btnChance3.BackColor = SystemColors.Control;
+            btnMG.BackColor = SystemColors.Control;
+            btnGoToJail.BackColor = SystemColors.Control;
+            btnPennAve.BackColor = SystemColors.Control;
+            btnChance4.BackColor = SystemColors.Control;
+            btnBW.BackColor = SystemColors.Control;
+
+            btnRollDice.Visible = false;
+            btnEndTurn.Visible = false;
+
+            txtA.Text = "";
+            txtB.Text = "";
+            txtCurPlayer.Text = "";
+            txtPlayer1M.Text = "";
+            txtPlayer2M.Text = "";
+            txtPlayer3M.Text = "";
+            txtPlayer4M.Text = "";
+
+            lblP1Turn.ForeColor = Color.Black;
+            lblP2Turn.ForeColor = Color.Black;
+            lblP3Turn.ForeColor = Color.Black;
+            lblP4Turn.ForeColor = Color.Black;
+
+            QPlayersIn.Text = "";
+            QPlayersIn.ReadOnly = false;
+        }
+
 
         /// <summary>
         /// Increments player upon call. Приращивает игрока при вызове.
