@@ -338,7 +338,7 @@ namespace Monopoly
                 if (dialog == System.Windows.Forms.DialogResult.Yes)
                 {
                     backToStart();
-                    btnNewGame.Text = "New Game";
+                    btnNewGame.Text = "Новая игра";
                 }
 
             }
@@ -356,7 +356,7 @@ namespace Monopoly
                     else
                     {
                         QPlayersIn.ReadOnly = true;//отключение выбора кол-ва игроков
-                        btnNewGame.Text = "End Game";
+                        btnNewGame.Text = "Завершить игру";
 
                         playerArray = new Player[QPlayers];
                         for (int i = 0; i < QPlayers; i++)
@@ -430,7 +430,9 @@ namespace Monopoly
             //        Button btn1 = (Button)btn;
             //        btn1.Text = "lol";
             //    }
-            //}      
+            //}    
+            currentPlayer = 0;
+
             btnGO.Text = "";
             btnBalAve.Text = "";
             btnChance1.Text = "";
@@ -565,5 +567,6 @@ namespace Monopoly
             spaceArray[playerArray[currentPlayer].getBoardSpace()].addHouse(
                 currentPlayer, ref playerArray[currentPlayer]);
         }
+
     }
 }
