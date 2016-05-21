@@ -53,6 +53,8 @@ namespace Monopoly
         /// <returns> </returns>
         public virtual int getOwner() { return -1; }
 
+        public virtual int getRent() { return 0; }
+
         /// <summary>
         /// Возвращает тип клетка
         /// </summary>

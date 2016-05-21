@@ -54,9 +54,12 @@ namespace Monopoly
             {
                 numHouses++;
                 rent += cost / 2;
-                curPlayer.updateMoney(-cost / 2);
+                curPlayer.updateMoney(-cost/2);
+                
+
+               
             }
-            return;
+                return;
             }
             else MessageBox.Show( "Вы уже купили все дома на этой улице." ,"Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
@@ -72,6 +75,8 @@ namespace Monopoly
         /// </summary>
         /// <returns> Цена дома. </returns>
         int getHouseCost() { return cost / 2; }
+
+        public override int getRent() { return rent; }
 
         /// <summary>
         /// Gets Возвр владельца объекта.
@@ -111,6 +116,7 @@ namespace Monopoly
                 curPlayer.updateMoney(-rent);
                 playerNum = ownedBy;
                 return rent;
+                
             }
 
             // Свободный объект

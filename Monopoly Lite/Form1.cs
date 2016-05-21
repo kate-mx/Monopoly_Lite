@@ -88,42 +88,42 @@ namespace Monopoly
             for (int i = 0; i < QPlayers; i++)
                 playerPosition[playerArray[i].getBoardSpace()] += (i + 1).ToString();
             btnGO.Text = playerPosition[0];
-            btnBalAve.Text = playerPosition[1];
+            btnSvobody.Text = playerPosition[1];
             btnChance1.Text = playerPosition[2];
-            btnConAve.Text = playerPosition[3];
+            btnPushkina.Text = playerPosition[3];
             btnJail.Text = playerPosition[4];
-            btnVAAve.Text = playerPosition[5];
+            btnGagarina.Text = playerPosition[5];
             btnChance2.Text = playerPosition[6];
-            btnNYAve.Text = playerPosition[7];
+            btnYubiley.Text = playerPosition[7];
             btnFP.Text = playerPosition[8];
-            btnILAve.Text = playerPosition[9];
+            btnLenina.Text = playerPosition[9];
             btnChance3.Text = playerPosition[10];
-            btnMG.Text = playerPosition[11];
+            btnProf.Text = playerPosition[11];
             btnGoToJail.Text = playerPosition[12];
-            btnPennAve.Text = playerPosition[13];
+            btnTverskaya.Text = playerPosition[13];
             btnChance4.Text = playerPosition[14];
-            btnBW.Text = playerPosition[15];
+            btnSovetskaya.Text = playerPosition[15];
 
             // Possesion Color  Присвоение цвета
 
             for (int i = 0; i < QPlayers; i++)
             {
                 if (spaceArray[1].getOwner() == i)
-                    btnBalAve.BackColor = colorArray[i];
+                    btnSvobody.BackColor = colorArray[i];
                 if (spaceArray[3].getOwner() == i)
-                    btnConAve.BackColor = colorArray[i];
+                    btnPushkina.BackColor = colorArray[i];
                 if (spaceArray[5].getOwner() == i)
-                    btnVAAve.BackColor = colorArray[i];
+                    btnGagarina.BackColor = colorArray[i];
                 if (spaceArray[7].getOwner() == i)
-                    btnNYAve.BackColor = colorArray[i];
+                    btnYubiley.BackColor = colorArray[i];
                 if (spaceArray[9].getOwner() == i)
-                    btnILAve.BackColor = colorArray[i];
+                    btnLenina.BackColor = colorArray[i];
                 if (spaceArray[11].getOwner() == i)
-                    btnMG.BackColor = colorArray[i];
+                    btnProf.BackColor = colorArray[i];
                 if (spaceArray[13].getOwner() == i)
-                    btnPennAve.BackColor = colorArray[i];
+                    btnTverskaya.BackColor = colorArray[i];
                 if (spaceArray[15].getOwner() == i)
-                    btnBW.BackColor = colorArray[i];
+                    btnSovetskaya.BackColor = colorArray[i];
             }
                     
         }
@@ -392,21 +392,21 @@ namespace Monopoly
 
                     // Включение кнопок с клетками
                     btnGO.Enabled = true;
-                    btnBalAve.Enabled = true;
+                    btnSvobody.Enabled = true;
                     btnChance1.Enabled = true;
-                    btnConAve.Enabled = true;
+                    btnPushkina.Enabled = true;
                     btnJail.Enabled = true;
-                    btnVAAve.Enabled = true;
+                    btnGagarina.Enabled = true;
                     btnChance2.Enabled = true;
-                    btnNYAve.Enabled = true;
+                    btnYubiley.Enabled = true;
                     btnFP.Enabled = true;
-                    btnILAve.Enabled = true;
+                    btnLenina.Enabled = true;
                     btnChance3.Enabled = true;
-                    btnMG.Enabled = true;
+                    btnProf.Enabled = true;
                     btnGoToJail.Enabled = true;
-                    btnPennAve.Enabled = true;
+                    btnTverskaya.Enabled = true;
                     btnChance4.Enabled = true;
-                    btnBW.Enabled = true;
+                    btnSovetskaya.Enabled = true;
 
                     btnRollDice.Visible = true;
                     updateStats();
@@ -434,55 +434,55 @@ namespace Monopoly
             currentPlayer = 0;
 
             btnGO.Text = "";
-            btnBalAve.Text = "";
+            btnSvobody.Text = "";
             btnChance1.Text = "";
-            btnConAve.Text = "";
+            btnPushkina.Text = "";
             btnJail.Text = "";
-            btnVAAve.Text = "";
+            btnGagarina.Text = "";
             btnChance2.Text = "";
-            btnNYAve.Text = "";
+            btnYubiley.Text = "";
             btnFP.Text = "";
-            btnILAve.Text = "";
+            btnLenina.Text = "";
             btnChance3.Text = "";
-            btnMG.Text = "";
+            btnProf.Text = "";
             btnGoToJail.Text = "";
-            btnPennAve.Text = "";
+            btnTverskaya.Text = "";
             btnChance4.Text = "";
-            btnBW.Text = "";
+            btnSovetskaya.Text = "";
 
             btnGO.Enabled = false;
-            btnBalAve.Enabled = false;
+            btnSvobody.Enabled = false;
             btnChance1.Enabled = false;
-            btnConAve.Enabled = false;
+            btnPushkina.Enabled = false;
             btnJail.Enabled = false;
-            btnVAAve.Enabled = false;
+            btnGagarina.Enabled = false;
             btnChance2.Enabled = false;
-            btnNYAve.Enabled = false;
+            btnYubiley.Enabled = false;
             btnFP.Enabled = false;
-            btnILAve.Enabled = false;
+            btnLenina.Enabled = false;
             btnChance3.Enabled = false;
-            btnMG.Enabled = false;
+            btnProf.Enabled = false;
             btnGoToJail.Enabled = false;
-            btnPennAve.Enabled = false;
+            btnTverskaya.Enabled = false;
             btnChance4.Enabled = false;
-            btnBW.Enabled = false;
+            btnSovetskaya.Enabled = false;
 
             btnGO.BackColor = SystemColors.Control;
-            btnBalAve.BackColor = SystemColors.Control;
+            btnSvobody.BackColor = SystemColors.Control;
             btnChance1.BackColor = SystemColors.Control;
-            btnConAve.BackColor = SystemColors.Control;
+            btnPushkina.BackColor = SystemColors.Control;
             btnJail.BackColor = SystemColors.Control;
-            btnVAAve.BackColor = SystemColors.Control;
+            btnGagarina.BackColor = SystemColors.Control;
             btnChance2.BackColor = SystemColors.Control;
-            btnNYAve.BackColor = SystemColors.Control;
+            btnYubiley.BackColor = SystemColors.Control;
             btnFP.BackColor = SystemColors.Control;
-            btnILAve.BackColor = SystemColors.Control;
+            btnLenina.BackColor = SystemColors.Control;
             btnChance3.BackColor = SystemColors.Control;
-            btnMG.BackColor = SystemColors.Control;
+            btnProf.BackColor = SystemColors.Control;
             btnGoToJail.BackColor = SystemColors.Control;
-            btnPennAve.BackColor = SystemColors.Control;
+            btnTverskaya.BackColor = SystemColors.Control;
             btnChance4.BackColor = SystemColors.Control;
-            btnBW.BackColor = SystemColors.Control;
+            btnSovetskaya.BackColor = SystemColors.Control;
 
             btnRollDice.Visible = false;
             btnEndTurn.Visible = false;
@@ -516,56 +516,67 @@ namespace Monopoly
             updateGame();
             btnEndTurn.Visible = false;
             btnRollDice.Visible = true;
+           
         }
 
         // Добавление дома по щелчку.
 
-        private void btnBW_Click(object sender, EventArgs e)
+        private void btnSovetskaya_Click(object sender, EventArgs e)
         {
             spaceArray[playerArray[currentPlayer].getBoardSpace()].addHouse(
                 currentPlayer, ref playerArray[currentPlayer]);
+            rent15.Text = spaceArray[15].getRent().ToString();
+            
         }
 
-        private void btnPennAve_Click(object sender, EventArgs e)
+        private void btnTverskaya_Click(object sender, EventArgs e)
         {
             spaceArray[playerArray[currentPlayer].getBoardSpace()].addHouse(
                 currentPlayer, ref playerArray[currentPlayer]);
+            rent13.Text = spaceArray[13].getRent().ToString();
+            
         }
 
-        private void btnMG_Click(object sender, EventArgs e)
+        private void btnProf_Click(object sender, EventArgs e)
         {
             spaceArray[playerArray[currentPlayer].getBoardSpace()].addHouse(
                 currentPlayer, ref playerArray[currentPlayer]);
+            rent11.Text = spaceArray[11].getRent().ToString();
         }
 
-        private void btnILAve_Click(object sender, EventArgs e)
+        private void btnLenina_Click(object sender, EventArgs e)
         {
             spaceArray[playerArray[currentPlayer].getBoardSpace()].addHouse(
                 currentPlayer, ref playerArray[currentPlayer]);
+            rent9.Text = spaceArray[9].getRent().ToString();
         }
 
-        private void btnNYAve_Click(object sender, EventArgs e)
+        private void btnYubiley_Click(object sender, EventArgs e)
         {
             spaceArray[playerArray[currentPlayer].getBoardSpace()].addHouse(
                 currentPlayer, ref playerArray[currentPlayer]);
+            rent7.Text = spaceArray[7].getRent().ToString();
         }
 
-        private void btnVAAve_Click(object sender, EventArgs e)
+        private void btnGagarina_Click(object sender, EventArgs e)
         {
             spaceArray[playerArray[currentPlayer].getBoardSpace()].addHouse(
                 currentPlayer, ref playerArray[currentPlayer]);
+            rent5.Text = spaceArray[5].getRent().ToString();
         }
 
-        private void btnConAve_Click(object sender, EventArgs e)
+        private void btnPushkina_Click(object sender, EventArgs e)
         {
             spaceArray[playerArray[currentPlayer].getBoardSpace()].addHouse(
                 currentPlayer, ref playerArray[currentPlayer]);
+            rent3.Text = spaceArray[3].getRent().ToString();
         }
 
-        private void btnBalAve_Click(object sender, EventArgs e)
+        private void btnSvobody_Click(object sender, EventArgs e)
         {
             spaceArray[playerArray[currentPlayer].getBoardSpace()].addHouse(
                 currentPlayer, ref playerArray[currentPlayer]);
+            rent1.Text = spaceArray[1].getRent().ToString();
         }
 
     }
