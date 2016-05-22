@@ -23,3 +23,8 @@ D:\Users\Екатерина\Учеба\4й семестр\ООП\temp\Monopoly L
 D:\Users\Екатерина\Учеба\4й семестр\ООП\temp\Monopoly Lite\obj\Debug\Monopoly_Lite.Properties.Resources.resources
 D:\Users\Екатерина\Учеба\4й семестр\ООП\temp\Monopoly Lite\obj\Debug\Monopoly Lite.csproj.GenerateResource.Cache
 D:\Users\Екатерина\Учеба\4й семестр\ООП\temp\Monopoly Lite\obj\Debug\Monopoly.Form1.resources
+C:\Users\user\Desktop\study\Курсовая\т\Monopoly Lite\bin\Debug\MaterialSkin.dll
+C:\Users\user\Desktop\study\Курсовая\т\Monopoly Lite\bin\Debug\Skin.dll
+C:\Users\user\Desktop\study\Курсовая\т\Monopoly Lite\obj\Debug\Monopoly.Form1.resources
+C:\Users\user\Desktop\study\Курсовая\т\Monopoly Lite\bin\Debug\Cocon90.Lib.Theme.dll
+C:\Users\user\Desktop\study\Курсовая\т\Monopoly Lite\bin\Debug\Cocon90.Lib.Theme.xml

@@ -8,10 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using Skin.Animacion;
+using Skin.Controles;
+using MaterialSkin.Animations;
+using MaterialSkin.Controls;
 
 namespace Monopoly
 {
-    public partial class Form1 : Form
+    public partial class Form1 : W10Form
     {
         //StreamWriter myOutFile = new StreamWriter("out.txt");
 
@@ -58,9 +62,7 @@ namespace Monopoly
              * */
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-        }
+
 
         /// <summary>
         /// Принимает все статистику игроков и выводит их в соответствующие текстовые поля
@@ -249,7 +251,10 @@ namespace Monopoly
             {
                 playerArray[currentPlayer].setJustInJail(false);
                 btnEndTurn.Visible = true;
+                MonopolyMan2.Visible = true;
+                MonopolyMan1.Visible = false;
                 btnRollDice.Visible = false;
+                pictureDice.Visible = false;//
                 updateGame();
                 return;
             }
@@ -262,8 +267,13 @@ namespace Monopoly
             if (!dice.isDoubles())
             {
                 btnEndTurn.Visible = true;
+                MonopolyMan2.Visible = true;
+                MonopolyMan1.Visible = false;
                 btnRollDice.Visible = false;
+                pictureDice.Visible = false;//
             }
+            
+
         }
 
         /// <summary>
@@ -409,6 +419,7 @@ namespace Monopoly
                     btnSovetskaya.Enabled = true;
 
                     btnRollDice.Visible = true;
+                    pictureDice.Visible = true;//
                     updateStats();
                     changeTurn();
                     playerPosition();
@@ -485,7 +496,10 @@ namespace Monopoly
             btnSovetskaya.BackColor = SystemColors.Control;
 
             btnRollDice.Visible = false;
+            pictureDice.Visible = false;//
             btnEndTurn.Visible = false;
+            MonopolyMan2.Visible = false;
+            MonopolyMan1.Visible = true;
 
             txtA.Text = "";
             txtB.Text = "";
@@ -515,7 +529,10 @@ namespace Monopoly
             currentPlayer++;
             updateGame();
             btnEndTurn.Visible = false;
+            MonopolyMan2.Visible = false;
+            MonopolyMan1.Visible = true;
             btnRollDice.Visible = true;
+            pictureDice.Visible = true;
            
         }
 
@@ -578,6 +595,16 @@ namespace Monopoly
                 currentPlayer, ref playerArray[currentPlayer]);
             rent1.Text = spaceArray[1].getRent().ToString();
         }
+
+        //private void materialRaisedButton2_Click(object sender, EventArgs e)
+        //{
+        //    DialogResult dialog = MessageBox.Show("Вы уверены, что хотите завершить текущую игру и выйти?", "Выход", MessageBoxButtons.YesNo);
+        //    if (dialog == System.Windows.Forms.DialogResult.Yes)
+        //    {
+        //        Application.Exit();
+        //    }
+
+        //}
 
     }
 }

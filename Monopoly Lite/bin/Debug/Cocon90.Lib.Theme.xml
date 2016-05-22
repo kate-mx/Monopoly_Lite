@@ -1,0 +1,365 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Cocon90.Lib.Theme</name>
+    </assembly>
+    <members>
+        <member name="T:Cocon90.Lib.Theme.NinePatch.NinePatchPanel">
+            <summary>
+            具有9Patch图形显示功能的Panel
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Theme.NinePatch.NinePatchPanel.#ctor">
+            <summary>
+            构建一个 具有9Patch图形显示功能的Panel
+            </summary>
+        </member>
+        <member name="F:Cocon90.Lib.Theme.NinePatch.NinePatchPanel.topXArr">
+            <summary>
+            顶部的黑点x坐标集
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Theme.NinePatch.NinePatchPanel.FrushUI">
+            <summary>
+            刷新背景界面
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Theme.NinePatch.NinePatchPanel.opearate_(System.Int32,System.Int32)">
+            <summary>
+            前面的数，减去后面的数，如果小于等于0，则返回1
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Theme.NinePatch.NinePatchPanel.NinePatchImageNoBorder">
+            <summary>
+            去掉那1象素后的9Patch图。
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Theme.NinePatch.NinePatchPanel.NinePatchImage">
+            <summary>
+            正常情况下的9Patch图形
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Theme.NinePatch.NinePatchPanel.NinePatchImageOnEnter">
+            <summary>
+            当鼠标进入控件时的9Patch图形
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Theme.NinePatch.NinePatchPanel.NinePatchImageOnDown">
+            <summary>
+            当鼠标在控件上按下左键时的9Patch图形
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Theme.NinePatch.NinePatchPanel.NinePatchImageCustom">
+            <summary>
+            自定义的用于ShowCustom9Patch=ture方法被调用时，显示的9Patch图片。
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Theme.NinePatch.NinePatchPanel.ShowCustom9Patch">
+            <summary>
+            获取或设置 定义是否显示自定义NinePatchImageCustom的9Patch图片。
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Theme.NinePatch.NinePatchPanel.FillCenter">
+            <summary>
+            是否是使用9Patch图填充中间区域
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Theme.NinePatch.NinePatchPanel.FillStyle">
+            <summary>
+            使用9Patch图填充边框区域
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Theme.NinePatch.NinePatchPanel.FillText">
+            <summary>
+            要在容器内绘制的文本
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Theme.NinePatch.NinePatchPanel.FillTextAlignment">
+             <summary>
+            容器中文本的对齐位置
+             </summary>
+        </member>
+        <member name="T:Cocon90.Lib.Theme.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Theme.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Theme.Properties.Resources.Culture">
+            <summary>
+              使用此强类型资源类，为所有资源查找
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Theme.Properties.Resources.btn_max_hover">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Theme.Properties.Resources.btn_max_normal">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Theme.Properties.Resources.btn_max_pressed">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Theme.Properties.Resources.btn_restore_hover">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Theme.Properties.Resources.btn_restore_normal">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Theme.Properties.Resources.btn_restore_pressed">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Theme.Properties.Resources.r_close_hover">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Theme.Properties.Resources.r_close_nomal">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Theme.Properties.Resources.r_close_pressed">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Theme.Properties.Resources.r_min_hover">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Theme.Properties.Resources.r_min_nomal">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Theme.Properties.Resources.r_min_pressed">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Theme.Properties.Resources.System">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="T:Cocon90.Lib.Theme.Skin.AnimateType">
+            <summary>
+            动画类型
+            </summary>
+        </member>
+        <member name="F:Cocon90.Lib.Theme.Skin.AnimateType.Left_Right">
+            <summary>
+            从左到右展示控件
+            </summary>
+        </member>
+        <member name="F:Cocon90.Lib.Theme.Skin.AnimateType.Right_Left">
+            <summary>
+            从右到左展示控件
+            </summary>
+        </member>
+        <member name="F:Cocon90.Lib.Theme.Skin.AnimateType.Top_Bottom">
+            <summary>
+            从上到下展示控件
+            </summary>
+        </member>
+        <member name="F:Cocon90.Lib.Theme.Skin.AnimateType.Bottom_Top">
+            <summary>
+            从下到上展示控件
+            </summary>
+        </member>
+        <member name="F:Cocon90.Lib.Theme.Skin.AnimateType.Center">
+            <summary>
+            从中间展示控件
+            </summary>
+        </member>
+        <member name="F:Cocon90.Lib.Theme.Skin.AnimateType.Hide">
+            <summary>
+            隐藏控件
+            </summary>
+        </member>
+        <member name="F:Cocon90.Lib.Theme.Skin.AnimateType.Active">
+            <summary>
+            激活控件
+            </summary>
+        </member>
+        <member name="F:Cocon90.Lib.Theme.Skin.AnimateType.Slide">
+            <summary>
+            使用滑动样式展示控件
+            </summary>
+        </member>
+        <member name="F:Cocon90.Lib.Theme.Skin.AnimateType.Blend">
+            <summary>
+            使用谈出样式展示控件
+            </summary>
+        </member>
+        <member name="T:Cocon90.Lib.Theme.Skin.animateHelper">
+            <summary>
+            让控件执行动画的类
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Theme.Skin.animateHelper.SetOpenAnimateMode(System.Windows.Forms.Control,System.Int32,Cocon90.Lib.Theme.Skin.AnimateType)">
+            <summary>
+            执行控件的打开动画
+            </summary>
+            <param name="form"></param>
+        </member>
+        <member name="M:Cocon90.Lib.Theme.Skin.animateHelper.SetCloseAnimateMode(System.Windows.Forms.Control,System.Int32,Cocon90.Lib.Theme.Skin.AnimateType)">
+            <summary>
+            执行控件的隐藏动画
+            </summary>
+            <param name="form"></param>
+        </member>
+        <member name="T:Cocon90.Lib.Theme.Skin.BlockForm">
+            <summary>
+            块状窗体 
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Theme.Skin.BlockForm.#ctor">
+            <summary>
+            构建一个块状窗体
+            </summary>
+        </member>
+        <member name="F:Cocon90.Lib.Theme.Skin.BlockForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Theme.Skin.BlockForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Cocon90.Lib.Theme.Skin.BlockForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Theme.Skin.BlockForm.IsDragable">
+            <summary>
+            窗体是否支持拖拽
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Theme.Skin.BlockForm.MaximizeBox">
+            <summary>
+            是否显示最大化按钮
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Theme.Skin.BlockForm.MinimizeBox">
+            <summary>
+            是否显示最小化按钮
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Theme.Skin.BlockForm.ControlBox">
+            <summary>
+            是否显示最大化最小化关闭按钮
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Theme.Skin.BlockForm.Title">
+             <summary>
+            获取或设置 窗体上显示标题
+             </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Theme.Skin.BlockForm.TitleFont">
+             <summary>
+            获取或设置 窗体上显示的文本
+             </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Theme.Skin.BlockForm.TitleBarHeight">
+             <summary>
+            获取或设置 窗体标题栏的高度
+             </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Theme.Skin.BlockForm.FormIcon">
+             <summary>
+            获取或设置 窗体上显示的图标
+             </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Theme.Skin.BlockForm.FormIconWidth">
+             <summary>
+            获取或设置 窗体上显示的图标的宽度，用于调整大小s
+             </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Theme.Skin.BlockForm.FormTextPadding">
+            <summary>
+            窗体上显示的文本 边框距离
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Theme.Skin.BlockForm.ShowIcon">
+            <summary>
+            窗体是否显示图标
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Theme.Skin.BlockForm.TitleBarBackColor">
+            <summary>
+            顶部标题栏背景颜色
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Theme.Skin.BlockForm.TitleBarForeColor">
+            <summary>
+            顶部标题栏标题字体颜色
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Theme.Skin.BlockForm.TitleBarBackgroundImage">
+            <summary>
+            顶部标题栏背景图片
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Theme.Skin.BlockForm.TitleBarBackgroundImageLayout">
+            <summary>
+            顶部标题栏背景图片排列方式
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Theme.Skin.BlockForm.AnimateTypeOnOpen">
+            <summary>
+            获取或设置 显示时的动画
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Theme.Skin.BlockForm.AnimateTypeOnClose">
+            <summary>
+            获取或设置 关闭时的动画
+            </summary>
+        </member>
+        <member name="P:Cocon90.Lib.Theme.Skin.BlockForm.AnimateTime">
+            <summary>
+            获取或设置 动画展示时间（默认是200）
+            </summary>
+        </member>
+        <member name="T:Cocon90.Lib.Theme.ControlDragHelper">
+            <summary>
+            控件常用功能辅助类
+            </summary>
+        </member>
+        <member name="M:Cocon90.Lib.Theme.ControlDragHelper.BindMouseDragEvent">
+            <summary>
+            为控件绑带支持鼠标拖动事件。
+            </summary>
+            <param name="control"></param>
+        </member>
+        <member name="M:Cocon90.Lib.Theme.ControlDragHelper.cancelBindMouseDragEvent">
+            <summary>
+            为控件绑带支持鼠标拖动事件。
+            </summary>
+            <param name="control"></param>
+        </member>
+    </members>
+</doc>

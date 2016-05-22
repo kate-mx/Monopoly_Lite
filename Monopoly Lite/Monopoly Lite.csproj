@@ -32,6 +32,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Cocon90.Lib.Theme">
+      <HintPath>..\..\..\..\..\..\..\рс\empty\Учеба\1-3 семестр\3 семестр\Кв.уравнение 1.1\packages\Cocon90.Lib.Theme.1.0.0.0\lib\net40\Cocon90.Lib.Theme.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="Skin">
+      <HintPath>..\packages\Skin.1.0.0.4\lib\Skin.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -70,7 +79,9 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -83,6 +94,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Share2015-09-10-2fc7b0d3cd216b9285ddc35721d9e84b7da337682cd15bb86237b4b2d9622588-Picture.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана %28163%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
