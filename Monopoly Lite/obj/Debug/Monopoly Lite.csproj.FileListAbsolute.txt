@@ -28,3 +28,21 @@ C:\Users\user\Desktop\study\Курсовая\т\Monopoly Lite\bin\Debug\Skin.dll
 C:\Users\user\Desktop\study\Курсовая\т\Monopoly Lite\obj\Debug\Monopoly.Form1.resources
 C:\Users\user\Desktop\study\Курсовая\т\Monopoly Lite\bin\Debug\Cocon90.Lib.Theme.dll
 C:\Users\user\Desktop\study\Курсовая\т\Monopoly Lite\bin\Debug\Cocon90.Lib.Theme.xml
+D:\Users\Екатерина\Учеба\4й семестр\ООП\Новая папка\Monopoly Lite\bin\Debug\Monopoly Lite.exe.config
+D:\Users\Екатерина\Учеба\4й семестр\ООП\Новая папка\Monopoly Lite\obj\Debug\Monopoly Lite.exe
+D:\Users\Екатерина\Учеба\4й семестр\ООП\Новая папка\Monopoly Lite\obj\Debug\Monopoly Lite.pdb
+D:\Users\Екатерина\Учеба\4й семестр\ООП\Новая папка\Monopoly Lite\bin\Debug\Monopoly Lite.exe
+D:\Users\Екатерина\Учеба\4й семестр\ООП\Новая папка\Monopoly Lite\bin\Debug\Monopoly Lite.pdb
+D:\Users\Екатерина\Учеба\4й семестр\ООП\Новая папка\Monopoly Lite\bin\Debug\MaterialSkin.dll
+D:\Users\Екатерина\Учеба\4й семестр\ООП\Новая папка\Monopoly Lite\bin\Debug\Skin.dll
+D:\Users\Екатерина\Учеба\4й семестр\ООП\Новая папка\Monopoly Lite\bin\Debug\Cocon90.Lib.Theme.xml
+D:\Users\Екатерина\Учеба\4й семестр\ООП\Новая папка\Monopoly Lite\obj\Debug\Monopoly Lite.csprojResolveAssemblyReference.cache
+D:\Users\Екатерина\Учеба\4й семестр\ООП\Новая папка\Monopoly Lite\obj\Debug\Monopoly.Form1.resources
+D:\Users\Екатерина\Учеба\4й семестр\ООП\Новая папка\Monopoly Lite\obj\Debug\Monopoly_Lite.Properties.Resources.resources
+D:\Users\Екатерина\Учеба\4й семестр\ООП\Новая папка\Monopoly Lite\obj\Debug\Monopoly Lite.csproj.GenerateResource.Cache
+D:\Users\Екатерина\Учеба\4й семестр\ООП\temp\Monopoly Lite\bin\Debug\MaterialSkin.dll
+D:\Users\Екатерина\Учеба\4й семестр\ООП\temp\Monopoly Lite\bin\Debug\Skin.dll
+D:\Users\Екатерина\Учеба\4й семестр\ООП\temp\Monopoly Lite\bin\Debug\Cocon90.Lib.Theme.xml
+D:\Users\Екатерина\Учеба\4й семестр\ООП\курсовая\temp\Monopoly Lite\bin\Debug\Monopoly Lite.exe.config
+D:\Users\Екатерина\Учеба\4й семестр\ООП\курсовая\temp\Monopoly Lite\obj\Debug\Monopoly Lite.exe
+D:\Users\Екатерина\Учеба\4й семестр\ООП\курсовая\temp\Monopoly Lite\obj\Debug\Monopoly Lite.pdb

@@ -63,14 +63,14 @@ namespace Monopoly
         }
 
 
-
+        
         /// <summary>
         /// Принимает все статистику игроков и выводит их в соответствующие текстовые поля
         /// </summary>
         private void updateStats()
         {
             int numPlayers = Int32.Parse(QPlayersIn.Text);
-
+            
             txtCurPlayer.Text = (currentPlayer + 1).ToString();
             if (numPlayers >= 1) txtPlayer1M.Text = playerArray[0].getMoney().ToString();
             if (numPlayers >= 2) txtPlayer2M.Text = playerArray[1].getMoney().ToString();
@@ -516,6 +516,11 @@ namespace Monopoly
 
             QPlayersIn.Text = "";
             QPlayersIn.ReadOnly = false;
+
+            rent1.Text = "12"; rent3.Text = "25";
+            rent5.Text = "37"; rent7.Text = "50";
+            rent9.Text = "62"; rent11.Text = "75";
+            rent13.Text = "87"; rent15.Text = "100";
         }
 
 
