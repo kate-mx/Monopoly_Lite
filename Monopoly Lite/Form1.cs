@@ -601,6 +601,13 @@ namespace Monopoly
             rent1.Text = spaceArray[1].getRent().ToString();
         }
 
+        private void webButtonExit_Click(object sender, EventArgs e)
+        {
+            DialogResult dialog = MessageBox.Show("Вы уверены, что хотите выйти из игры?", "Выход", MessageBoxButtons.YesNo);
+            if (dialog == System.Windows.Forms.DialogResult.Yes)
+                Application.Exit();
+        }
+
         //private void materialRaisedButton2_Click(object sender, EventArgs e)
         //{
         //    DialogResult dialog = MessageBox.Show("Вы уверены, что хотите завершить текущую игру и выйти?", "Выход", MessageBoxButtons.YesNo);

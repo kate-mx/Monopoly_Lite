@@ -96,10 +96,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Share2015-09-10-2fc7b0d3cd216b9285ddc35721d9e84b7da337682cd15bb86237b4b2d9622588-Picture.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Снимок экрана %28163%29.png" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
