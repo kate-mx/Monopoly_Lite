@@ -146,7 +146,7 @@
             // btnJail
             // 
             this.btnJail.Enabled = false;
-            this.btnJail.Location = new System.Drawing.Point(407, 353);
+            this.btnJail.Location = new System.Drawing.Point(201, 228);
             this.btnJail.Margin = new System.Windows.Forms.Padding(4);
             this.btnJail.Name = "btnJail";
             this.btnJail.Size = new System.Drawing.Size(67, 66);
@@ -156,7 +156,7 @@
             // btnChance2
             // 
             this.btnChance2.Enabled = false;
-            this.btnChance2.Location = new System.Drawing.Point(557, 353);
+            this.btnChance2.Location = new System.Drawing.Point(351, 228);
             this.btnChance2.Margin = new System.Windows.Forms.Padding(4);
             this.btnChance2.Name = "btnChance2";
             this.btnChance2.Size = new System.Drawing.Size(67, 66);
@@ -166,7 +166,7 @@
             // btnGagarina
             // 
             this.btnGagarina.Enabled = false;
-            this.btnGagarina.Location = new System.Drawing.Point(482, 353);
+            this.btnGagarina.Location = new System.Drawing.Point(276, 228);
             this.btnGagarina.Margin = new System.Windows.Forms.Padding(4);
             this.btnGagarina.Name = "btnGagarina";
             this.btnGagarina.Size = new System.Drawing.Size(67, 66);
@@ -177,7 +177,7 @@
             // btnChance4
             // 
             this.btnChance4.Enabled = false;
-            this.btnChance4.Location = new System.Drawing.Point(557, 628);
+            this.btnChance4.Location = new System.Drawing.Point(351, 503);
             this.btnChance4.Margin = new System.Windows.Forms.Padding(4);
             this.btnChance4.Name = "btnChance4";
             this.btnChance4.Size = new System.Drawing.Size(67, 66);
@@ -187,7 +187,7 @@
             // btnGoToJail
             // 
             this.btnGoToJail.Enabled = false;
-            this.btnGoToJail.Location = new System.Drawing.Point(706, 628);
+            this.btnGoToJail.Location = new System.Drawing.Point(500, 503);
             this.btnGoToJail.Margin = new System.Windows.Forms.Padding(4);
             this.btnGoToJail.Name = "btnGoToJail";
             this.btnGoToJail.Size = new System.Drawing.Size(67, 66);
@@ -197,7 +197,7 @@
             // btnTverskaya
             // 
             this.btnTverskaya.Enabled = false;
-            this.btnTverskaya.Location = new System.Drawing.Point(631, 628);
+            this.btnTverskaya.Location = new System.Drawing.Point(425, 503);
             this.btnTverskaya.Margin = new System.Windows.Forms.Padding(4);
             this.btnTverskaya.Name = "btnTverskaya";
             this.btnTverskaya.Size = new System.Drawing.Size(67, 66);
@@ -219,7 +219,7 @@
             // btnChance1
             // 
             this.btnChance1.Enabled = false;
-            this.btnChance1.Location = new System.Drawing.Point(407, 491);
+            this.btnChance1.Location = new System.Drawing.Point(201, 366);
             this.btnChance1.Margin = new System.Windows.Forms.Padding(4);
             this.btnChance1.Name = "btnChance1";
             this.btnChance1.Size = new System.Drawing.Size(67, 66);
@@ -229,7 +229,7 @@
             // btnSovetskaya
             // 
             this.btnSovetskaya.Enabled = false;
-            this.btnSovetskaya.Location = new System.Drawing.Point(482, 628);
+            this.btnSovetskaya.Location = new System.Drawing.Point(276, 503);
             this.btnSovetskaya.Margin = new System.Windows.Forms.Padding(4);
             this.btnSovetskaya.Name = "btnSovetskaya";
             this.btnSovetskaya.Size = new System.Drawing.Size(67, 66);
@@ -240,7 +240,7 @@
             // btnChance3
             // 
             this.btnChance3.Enabled = false;
-            this.btnChance3.Location = new System.Drawing.Point(920, 513);
+            this.btnChance3.Location = new System.Drawing.Point(714, 388);
             this.btnChance3.Margin = new System.Windows.Forms.Padding(4);
             this.btnChance3.Name = "btnChance3";
             this.btnChance3.Size = new System.Drawing.Size(40, 90);
@@ -250,7 +250,7 @@
             // btnFP
             // 
             this.btnFP.Enabled = false;
-            this.btnFP.Location = new System.Drawing.Point(925, 272);
+            this.btnFP.Location = new System.Drawing.Point(719, 147);
             this.btnFP.Margin = new System.Windows.Forms.Padding(4);
             this.btnFP.Name = "btnFP";
             this.btnFP.Size = new System.Drawing.Size(40, 90);
@@ -271,7 +271,7 @@
             // btnSvobody
             // 
             this.btnSvobody.Enabled = false;
-            this.btnSvobody.Location = new System.Drawing.Point(407, 560);
+            this.btnSvobody.Location = new System.Drawing.Point(201, 435);
             this.btnSvobody.Margin = new System.Windows.Forms.Padding(4);
             this.btnSvobody.Name = "btnSvobody";
             this.btnSvobody.Size = new System.Drawing.Size(67, 66);
@@ -282,7 +282,7 @@
             // btnGO
             // 
             this.btnGO.Enabled = false;
-            this.btnGO.Location = new System.Drawing.Point(407, 628);
+            this.btnGO.Location = new System.Drawing.Point(201, 503);
             this.btnGO.Margin = new System.Windows.Forms.Padding(4);
             this.btnGO.Name = "btnGO";
             this.btnGO.Size = new System.Drawing.Size(67, 66);
@@ -292,7 +292,7 @@
             // btnPushkina
             // 
             this.btnPushkina.Enabled = false;
-            this.btnPushkina.Location = new System.Drawing.Point(407, 422);
+            this.btnPushkina.Location = new System.Drawing.Point(201, 297);
             this.btnPushkina.Margin = new System.Windows.Forms.Padding(4);
             this.btnPushkina.Name = "btnPushkina";
             this.btnPushkina.Size = new System.Drawing.Size(67, 66);
@@ -303,7 +303,7 @@
             // btnYubiley
             // 
             this.btnYubiley.Enabled = false;
-            this.btnYubiley.Location = new System.Drawing.Point(645, 353);
+            this.btnYubiley.Location = new System.Drawing.Point(439, 228);
             this.btnYubiley.Margin = new System.Windows.Forms.Padding(4);
             this.btnYubiley.Name = "btnYubiley";
             this.btnYubiley.Size = new System.Drawing.Size(67, 66);
@@ -314,7 +314,7 @@
             // lblJail
             // 
             this.lblJail.AutoSize = true;
-            this.lblJail.Location = new System.Drawing.Point(340, 378);
+            this.lblJail.Location = new System.Drawing.Point(134, 253);
             this.lblJail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblJail.Name = "lblJail";
             this.lblJail.Size = new System.Drawing.Size(59, 17);
@@ -334,7 +334,7 @@
             // lblChance1
             // 
             this.lblChance1.AutoSize = true;
-            this.lblChance1.Location = new System.Drawing.Point(341, 514);
+            this.lblChance1.Location = new System.Drawing.Point(135, 389);
             this.lblChance1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblChance1.Name = "lblChance1";
             this.lblChance1.Size = new System.Drawing.Size(42, 17);
@@ -354,7 +354,7 @@
             // lblGo
             // 
             this.lblGo.AutoSize = true;
-            this.lblGo.Location = new System.Drawing.Point(403, 694);
+            this.lblGo.Location = new System.Drawing.Point(197, 569);
             this.lblGo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblGo.Name = "lblGo";
             this.lblGo.Size = new System.Drawing.Size(47, 17);
@@ -374,7 +374,7 @@
             // lblChance4
             // 
             this.lblChance4.AutoSize = true;
-            this.lblChance4.Location = new System.Drawing.Point(577, 695);
+            this.lblChance4.Location = new System.Drawing.Point(371, 570);
             this.lblChance4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblChance4.Name = "lblChance4";
             this.lblChance4.Size = new System.Drawing.Size(42, 17);
@@ -394,7 +394,7 @@
             // lblGoToJail
             // 
             this.lblGoToJail.AutoSize = true;
-            this.lblGoToJail.Location = new System.Drawing.Point(781, 652);
+            this.lblGoToJail.Location = new System.Drawing.Point(575, 527);
             this.lblGoToJail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblGoToJail.Name = "lblGoToJail";
             this.lblGoToJail.Size = new System.Drawing.Size(73, 17);
@@ -415,7 +415,7 @@
             // lblChance3
             // 
             this.lblChance3.AutoSize = true;
-            this.lblChance3.Location = new System.Drawing.Point(990, 521);
+            this.lblChance3.Location = new System.Drawing.Point(784, 396);
             this.lblChance3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblChance3.Name = "lblChance3";
             this.lblChance3.Size = new System.Drawing.Size(42, 17);
@@ -436,7 +436,7 @@
             // lblFP
             // 
             this.lblFP.AutoSize = true;
-            this.lblFP.Location = new System.Drawing.Point(1004, 200);
+            this.lblFP.Location = new System.Drawing.Point(756, 117);
             this.lblFP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFP.Name = "lblFP";
             this.lblFP.Size = new System.Drawing.Size(152, 17);
@@ -456,7 +456,7 @@
             // lblChance2
             // 
             this.lblChance2.AutoSize = true;
-            this.lblChance2.Location = new System.Drawing.Point(560, 333);
+            this.lblChance2.Location = new System.Drawing.Point(354, 208);
             this.lblChance2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblChance2.Name = "lblChance2";
             this.lblChance2.Size = new System.Drawing.Size(42, 17);
@@ -507,7 +507,7 @@
             // 
             this.lblHouseInstruct.AutoSize = true;
             this.lblHouseInstruct.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblHouseInstruct.Location = new System.Drawing.Point(1273, 80);
+            this.lblHouseInstruct.Location = new System.Drawing.Point(971, 43);
             this.lblHouseInstruct.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblHouseInstruct.Name = "lblHouseInstruct";
             this.lblHouseInstruct.Size = new System.Drawing.Size(540, 18);
@@ -519,7 +519,7 @@
             this.lblP1Turn.AutoSize = true;
             this.lblP1Turn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblP1Turn.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblP1Turn.Location = new System.Drawing.Point(1231, 147);
+            this.lblP1Turn.Location = new System.Drawing.Point(929, 110);
             this.lblP1Turn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblP1Turn.Name = "lblP1Turn";
             this.lblP1Turn.Size = new System.Drawing.Size(155, 20);
@@ -530,7 +530,7 @@
             // 
             this.lblP3Turn.AutoSize = true;
             this.lblP3Turn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblP3Turn.Location = new System.Drawing.Point(1231, 203);
+            this.lblP3Turn.Location = new System.Drawing.Point(929, 166);
             this.lblP3Turn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblP3Turn.Name = "lblP3Turn";
             this.lblP3Turn.Size = new System.Drawing.Size(153, 20);
@@ -541,7 +541,7 @@
             // 
             this.lblP4Turn.AutoSize = true;
             this.lblP4Turn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblP4Turn.Location = new System.Drawing.Point(1231, 232);
+            this.lblP4Turn.Location = new System.Drawing.Point(929, 195);
             this.lblP4Turn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblP4Turn.Name = "lblP4Turn";
             this.lblP4Turn.Size = new System.Drawing.Size(189, 20);
@@ -552,7 +552,7 @@
             // 
             this.lblP2Turn.AutoSize = true;
             this.lblP2Turn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblP2Turn.Location = new System.Drawing.Point(1231, 176);
+            this.lblP2Turn.Location = new System.Drawing.Point(929, 139);
             this.lblP2Turn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblP2Turn.Name = "lblP2Turn";
             this.lblP2Turn.Size = new System.Drawing.Size(133, 20);
@@ -573,7 +573,7 @@
             this.grpStats.Controls.Add(this.lblPlayer3M);
             this.grpStats.Controls.Add(this.lblPlayer4M);
             this.grpStats.Controls.Add(this.lblCurPlayer);
-            this.grpStats.Location = new System.Drawing.Point(1421, 380);
+            this.grpStats.Location = new System.Drawing.Point(955, 262);
             this.grpStats.Margin = new System.Windows.Forms.Padding(4);
             this.grpStats.Name = "grpStats";
             this.grpStats.Padding = new System.Windows.Forms.Padding(4);
@@ -681,7 +681,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(1549, 146);
+            this.label1.Location = new System.Drawing.Point(1140, 93);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(138, 18);
@@ -690,7 +690,7 @@
             // 
             // txtA
             // 
-            this.txtA.Location = new System.Drawing.Point(1575, 174);
+            this.txtA.Location = new System.Drawing.Point(1166, 121);
             this.txtA.Margin = new System.Windows.Forms.Padding(4);
             this.txtA.Name = "txtA";
             this.txtA.ReadOnly = true;
@@ -699,7 +699,7 @@
             // 
             // txtB
             // 
-            this.txtB.Location = new System.Drawing.Point(1610, 174);
+            this.txtB.Location = new System.Drawing.Point(1201, 121);
             this.txtB.Margin = new System.Windows.Forms.Padding(4);
             this.txtB.Name = "txtB";
             this.txtB.ReadOnly = true;
@@ -712,7 +712,7 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.lblBalAve);
-            this.panel1.Location = new System.Drawing.Point(284, 562);
+            this.panel1.Location = new System.Drawing.Point(78, 437);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(115, 64);
             this.panel1.TabIndex = 49;
@@ -750,7 +750,7 @@
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.lblConAve);
-            this.panel2.Location = new System.Drawing.Point(284, 422);
+            this.panel2.Location = new System.Drawing.Point(78, 297);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(115, 64);
             this.panel2.TabIndex = 50;
@@ -788,7 +788,7 @@
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.lblVAAve);
-            this.panel3.Location = new System.Drawing.Point(471, 282);
+            this.panel3.Location = new System.Drawing.Point(265, 157);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(84, 64);
             this.panel3.TabIndex = 51;
@@ -826,7 +826,7 @@
             this.panel4.Controls.Add(this.label9);
             this.panel4.Controls.Add(this.label10);
             this.panel4.Controls.Add(this.lblNYAve);
-            this.panel4.Location = new System.Drawing.Point(644, 282);
+            this.panel4.Location = new System.Drawing.Point(438, 157);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(97, 64);
             this.panel4.TabIndex = 52;
@@ -940,7 +940,7 @@
             this.panel7.Controls.Add(this.label15);
             this.panel7.Controls.Add(this.label16);
             this.panel7.Controls.Add(this.lblPennAve);
-            this.panel7.Location = new System.Drawing.Point(647, 701);
+            this.panel7.Location = new System.Drawing.Point(441, 576);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(84, 64);
             this.panel7.TabIndex = 55;
@@ -978,7 +978,7 @@
             this.panel8.Controls.Add(this.label17);
             this.panel8.Controls.Add(this.label18);
             this.panel8.Controls.Add(this.lblBW);
-            this.panel8.Location = new System.Drawing.Point(493, 701);
+            this.panel8.Location = new System.Drawing.Point(287, 576);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(84, 64);
             this.panel8.TabIndex = 52;
@@ -1018,7 +1018,7 @@
             this.btnRollDice.ForeColor = System.Drawing.Color.White;
             this.btnRollDice.IconShow = true;
             this.btnRollDice.IconType = Skin.IconType.flickr;
-            this.btnRollDice.Location = new System.Drawing.Point(1552, 232);
+            this.btnRollDice.Location = new System.Drawing.Point(1143, 179);
             this.btnRollDice.MouseLocation = new System.Drawing.Point(0, 0);
             this.btnRollDice.MouseState = Skin.MouseState.HOVER;
             this.btnRollDice.Name = "btnRollDice";
@@ -1048,7 +1048,7 @@
             // pictureDice
             // 
             this.pictureDice.Image = ((System.Drawing.Image)(resources.GetObject("pictureDice.Image")));
-            this.pictureDice.Location = new System.Drawing.Point(1729, 146);
+            this.pictureDice.Location = new System.Drawing.Point(1320, 93);
             this.pictureDice.Name = "pictureDice";
             this.pictureDice.Size = new System.Drawing.Size(135, 71);
             this.pictureDice.TabIndex = 60;
@@ -1059,7 +1059,7 @@
             // 
             this.MonopolyMan1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("MonopolyMan1.BackgroundImage")));
             this.MonopolyMan1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.MonopolyMan1.Location = new System.Drawing.Point(1513, 682);
+            this.MonopolyMan1.Location = new System.Drawing.Point(1049, 518);
             this.MonopolyMan1.Name = "MonopolyMan1";
             this.MonopolyMan1.Size = new System.Drawing.Size(264, 303);
             this.MonopolyMan1.TabIndex = 57;
@@ -1069,7 +1069,7 @@
             // 
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(477, 467);
+            this.pictureBox2.Location = new System.Drawing.Point(271, 342);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(235, 86);
             this.pictureBox2.TabIndex = 58;
@@ -1083,7 +1083,7 @@
             this.btnEndTurn.ForeColor = System.Drawing.Color.White;
             this.btnEndTurn.IconShow = true;
             this.btnEndTurn.IconType = Skin.IconType.check_square;
-            this.btnEndTurn.Location = new System.Drawing.Point(1637, 748);
+            this.btnEndTurn.Location = new System.Drawing.Point(1173, 584);
             this.btnEndTurn.MouseLocation = new System.Drawing.Point(0, 0);
             this.btnEndTurn.MouseState = Skin.MouseState.HOVER;
             this.btnEndTurn.Name = "btnEndTurn";
@@ -1098,7 +1098,7 @@
             // 
             this.MonopolyMan2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("MonopolyMan2.BackgroundImage")));
             this.MonopolyMan2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.MonopolyMan2.Location = new System.Drawing.Point(1416, 681);
+            this.MonopolyMan2.Location = new System.Drawing.Point(952, 517);
             this.MonopolyMan2.Name = "MonopolyMan2";
             this.MonopolyMan2.Size = new System.Drawing.Size(223, 300);
             this.MonopolyMan2.TabIndex = 62;
@@ -1111,7 +1111,7 @@
             this.panelProf.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelProf.Controls.Add(this.panel6);
             this.panelProf.Controls.Add(this.btnProf);
-            this.panelProf.Location = new System.Drawing.Point(920, 625);
+            this.panelProf.Location = new System.Drawing.Point(714, 500);
             this.panelProf.Name = "panelProf";
             this.panelProf.Size = new System.Drawing.Size(170, 100);
             this.panelProf.TabIndex = 63;
@@ -1122,7 +1122,7 @@
             this.panelLenina.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelLenina.Controls.Add(this.btnLenina);
             this.panelLenina.Controls.Add(this.panel5);
-            this.panelLenina.Location = new System.Drawing.Point(915, 387);
+            this.panelLenina.Location = new System.Drawing.Point(709, 262);
             this.panelLenina.Name = "panelLenina";
             this.panelLenina.Size = new System.Drawing.Size(170, 100);
             this.panelLenina.TabIndex = 64;
@@ -1130,7 +1130,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(975, 272);
+            this.pictureBox3.Location = new System.Drawing.Point(769, 147);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(100, 100);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1141,7 +1141,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1932, 1000);
+            this.ClientSize = new System.Drawing.Size(1528, 876);
             this.ControlBoxColor = Skin.Colores.Organico.Marron;
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.panelLenina);
@@ -1194,7 +1194,6 @@
             this.Controls.Add(this.pictureDice);
             this.Controls.Add(this.MonopolyMan2);
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.MinimumSize = new System.Drawing.Size(1918, 1000);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Tema = Skin.Colores.Natural.Marron;

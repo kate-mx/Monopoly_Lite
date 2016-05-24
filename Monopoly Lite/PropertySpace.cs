@@ -84,6 +84,8 @@ namespace Monopoly
         /// <returns> Владелец объекта. </returns>
         public override int getOwner() { return ownedBy; }
 
+        public void  setOwner() { ownedBy = 0; }
+
         /// <summary>
         /// Sets Назначает объект в собственность игроку
         /// </summary>

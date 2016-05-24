@@ -17,7 +17,6 @@ namespace Monopoly
 {
     public partial class Form1 : W10Form
     {
-        //StreamWriter myOutFile = new StreamWriter("out.txt");
 
         // Массив игроков. Варьируется в размерах (2 - 4).
         Player[] playerArray;
@@ -168,7 +167,9 @@ namespace Monopoly
         {
             for (int i = 0; i < QPlayers; i++)
                 if (playerArray[i].getMoney() <= 0)
+
                     playerArray[i].setGameOver(true);
+            
         }
 
         /// <summary>
@@ -277,7 +278,6 @@ namespace Monopoly
         }
 
         /// <summary>
-        /// Roll the dice for player if they are in jail to test for doubles.
         /// Кидаем кости для игрока, который находится в тюрьме, чтобы проверить дубли.
         /// </summary>
         private void btnRollDiceJail()
