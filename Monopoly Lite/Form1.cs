@@ -28,7 +28,7 @@ namespace Monopoly
         Dice dice = new Dice();
 
         // Массив цветов, в котором текущий индекс игрока могут быть взаимозаменяемыми.
-        // Ex. color[currentPlayer] текщий цыет игроков
+        // Ex. color[currentPlayer] текщий цвет игроков
         Color[] colorArray = new Color[4];
 
         // Количество игроков
@@ -45,23 +45,6 @@ namespace Monopoly
             InitializeComponent();
         }
 
-        /// <summary>
-        /// выводит информацию об игроке в файл для целей отладки.
-        /// </summary>
-        /// <param name="mPlayer"> Ссылка на игрока, чтобы получить информацию от </param>
-        void showPlayer(ref Player mPlayer)
-        {
-            /*
-            myOutFile.WriteLine("Money: " + mPlayer.getMoney().ToString());
-            myOutFile.WriteLine("BoardSpace: " + mPlayer.getBoardSpace().ToString());
-            myOutFile.WriteLine("In Jail: " + mPlayer.getInJail().ToString());
-            myOutFile.WriteLine("Doubles: " + mPlayer.getNumDoubles().ToString());
-            myOutFile.WriteLine("Turns Missed: " + mPlayer.getTurnsMissed().ToString());
-            myOutFile.WriteLine("------");
-             * */
-        }
-
-
         
         /// <summary>
         /// Принимает все статистику игроков и выводит их в соответствующие текстовые поля
@@ -77,9 +60,38 @@ namespace Monopoly
             if (numPlayers == 4) txtPlayer4M.Text = playerArray[3].getMoney().ToString();
         }
 
+        //Метод обозначающий ход (подсвечиваются цветом кнопки, по которым прошел игрок)
+        private void timemove(int playerCurrentSpace)
+        {
+            for (int i = 0; i <= dice.GetTotal(); i++)
+            {
+                if (playerCurrentSpace == 0) btnGO.BackColor = Color.Aquamarine;
+                if (playerCurrentSpace == 1) btnSvobody.BackColor = Color.Aquamarine;
+                if (playerCurrentSpace == 2) btnChance1.BackColor = Color.Aquamarine;
+                if (playerCurrentSpace == 3) btnPushkina.BackColor = Color.Aquamarine;
+                if (playerCurrentSpace == 4) btnJail.BackColor = Color.Aquamarine;
+                if (playerCurrentSpace == 5) btnGagarina.BackColor = Color.Aquamarine;
+                if (playerCurrentSpace == 6) btnChance2.BackColor = Color.Aquamarine;
+                if (playerCurrentSpace == 7) btnYubiley.BackColor = Color.Aquamarine;
+                if (playerCurrentSpace == 8) btnFP.BackColor = Color.Aquamarine;
+                if (playerCurrentSpace == 9) btnLenina.BackColor = Color.Aquamarine;
+                if (playerCurrentSpace == 10) btnChance3.BackColor = Color.Aquamarine;
+                if (playerCurrentSpace == 11) btnProf.BackColor = Color.Aquamarine;
+                if (playerCurrentSpace == 12) btnGoToJail.BackColor = Color.Aquamarine;
+                if (playerCurrentSpace == 13) btnTverskaya.BackColor = Color.Aquamarine;
+                if (playerCurrentSpace == 14) btnChance4.BackColor = Color.Aquamarine;
+                if (playerCurrentSpace == 15) btnSovetskaya.BackColor = Color.Aquamarine;
+
+                if (playerCurrentSpace == 15) playerCurrentSpace = -1;
+                
+                playerCurrentSpace++;
+            }
+            
+        }
+        
         /// <summary>
         /// Изменение представления о местонахождении игроков в нужное
-        /// место и добавляет / удаляет любые представления игроков имущества.
+        /// место и добавляет / удаляет любые данные о имуществе игроков.
         /// </summary>
         private void playerPosition()
         {
@@ -160,7 +172,6 @@ namespace Monopoly
         }
 
         /// <summary>
-        /// Check to see if a player has lost 
         /// Проверка проигрыша игрока
         /// </summary>
         private void checkLoss()
@@ -173,7 +184,6 @@ namespace Monopoly
         }
 
         /// <summary>
-        /// Checks if anyone of the players has caused bankrupcy among all of the other players.
         /// Проверка, является ли кто-либо из игроков банкротом.
         /// </summary>
         private int checkWin()
@@ -209,7 +219,6 @@ namespace Monopoly
         private void updateGame()
         {
             playerPosition();
-
             // Проверяет наличие неактивного (игрока, который потерял).
             while (true)
             {
@@ -237,16 +246,33 @@ namespace Monopoly
         }
 
         /// <summary>
-        /// Returns if requirments are not met.  Calls both rolling dice methods 
-        /// (1 will return if not correct).  Then updates the game.
-        /// Возвращает, если требования не будут выполнены. 
-        /// Вызывает как прокатные методы кости (1 будет вернуться, если не правильно). 
-        /// Затем обновляет игру.
+        /// Бросок кубиков.
+        /// Вызывает два вида броска. В зависимости от ситуации один работать не будет.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void btnRollDice_Click(object sender, EventArgs e)
         {
+
+            #region
+            btnGO.BackColor = SystemColors.Control;
+            btnSvobody.BackColor = SystemColors.Control;
+            btnChance1.BackColor = SystemColors.Control;
+            btnPushkina.BackColor = SystemColors.Control;
+            btnJail.BackColor = SystemColors.Control;
+            btnGagarina.BackColor = SystemColors.Control;
+            btnChance2.BackColor = SystemColors.Control;
+            btnYubiley.BackColor = SystemColors.Control;
+            btnFP.BackColor = SystemColors.Control;
+            btnLenina.BackColor = SystemColors.Control;
+            btnChance3.BackColor = SystemColors.Control;
+            btnProf.BackColor = SystemColors.Control;
+            btnGoToJail.BackColor = SystemColors.Control;
+            btnTverskaya.BackColor = SystemColors.Control;
+            btnChance4.BackColor = SystemColors.Control;
+            btnSovetskaya.BackColor = SystemColors.Control;
+            #endregion
+
             if (playerArray[currentPlayer].getGameOver()) return;
             if (playerArray[currentPlayer].getJustInJail())
             {
@@ -255,14 +281,14 @@ namespace Monopoly
                 MonopolyMan2.Visible = true;
                 MonopolyMan1.Visible = false;
                 btnRollDice.Visible = false;
-                pictureDice.Visible = false;//
+                pictureDice.Visible = false;
                 updateGame();
                 return;
             }
 
+
             btnRollDiceJail();
             btnRollDiceFree();
-
             updateGame();
 
             if (!dice.isDoubles())
@@ -273,7 +299,7 @@ namespace Monopoly
                 btnRollDice.Visible = false;
                 pictureDice.Visible = false;//
             }
-            
+
 
         }
 
@@ -293,14 +319,13 @@ namespace Monopoly
                 MessageBox.Show("Вы освобождены из тюрьмы!");
             else
                 MessageBox.Show("Дубля не выпало!");
-
             playerArray[currentPlayer].move(dice.GetTotal(), dice.isDoubles());
         }
 
         /// <summary>
         /// Бросок костей для игрока, который свободен (не в тюрьме).
         /// </summary>
-        private void btnRollDiceFree()
+        public void btnRollDiceFree()
         {
             if (playerArray[currentPlayer].getInJail()) return;
 
@@ -309,7 +334,10 @@ namespace Monopoly
             txtA.Text = dice.getNumber(1).ToString();
             txtB.Text = dice.getNumber(2).ToString();
 
+
             int tempPlayer = currentPlayer;
+            
+            timemove(playerArray[currentPlayer].getBoardSpace());
 
             playerArray[currentPlayer].move(dice.GetTotal(), dice.isDoubles());
 
@@ -317,11 +345,12 @@ namespace Monopoly
             int rent = spaceArray[playerArray[currentPlayer].getBoardSpace()].doAction(ref currentPlayer, ref playerArray[currentPlayer]);
 
 
-            // Updates the owner of the space's money.
-            // Обновляем владельца денег клетки(пространства)
+            // Обновляем деньги владельца  клетки
             playerArray[currentPlayer].updateMoney(rent);
 
             currentPlayer = tempPlayer;
+             
+            playerPosition();
         }
 
         /// <summary>
@@ -334,7 +363,7 @@ namespace Monopoly
         /// <param name="e"></param>
         private void btnNewGame_Click(object sender, EventArgs e)
         {
-            bool checkClick = true; //проверка, совершено ли было нажатие
+            bool checkClick = true; //проверка, совершено ли было нажатие кнопки
 
 
             colorArray[0] = Color.Green;
@@ -358,6 +387,8 @@ namespace Monopoly
                 {
                     QPlayers = Int32.Parse(QPlayersIn.Text);
 
+                    if (QPlayers == 2) { lblP3Turn.Visible = false; lblP4Turn.Visible = false; }
+
                     if (QPlayers <= 1 || QPlayers >= 5)
                     {
                         MessageBox.Show("Введите число в интервале 2 - 4!");
@@ -371,6 +402,7 @@ namespace Monopoly
                         playerArray = new Player[QPlayers];
                         for (int i = 0; i < QPlayers; i++)
                             playerArray[i] = new Player();
+
                     }
                 }
                 catch (FormatException)
@@ -525,7 +557,7 @@ namespace Monopoly
 
 
         /// <summary>
-        /// Increments player upon call. Приращивает игрока при вызове.
+        /// Переход к следующему игроку после нажатия на "Завершить ход"
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -538,11 +570,30 @@ namespace Monopoly
             MonopolyMan1.Visible = true;
             btnRollDice.Visible = true;
             pictureDice.Visible = true;
-           
+
+            #region
+            btnGO.BackColor = SystemColors.Control;
+            btnSvobody.BackColor = SystemColors.Control;
+            btnChance1.BackColor = SystemColors.Control;
+            btnPushkina.BackColor = SystemColors.Control;
+            btnJail.BackColor = SystemColors.Control;
+            btnGagarina.BackColor = SystemColors.Control;
+            btnChance2.BackColor = SystemColors.Control;
+            btnYubiley.BackColor = SystemColors.Control;
+            btnFP.BackColor = SystemColors.Control;
+            btnLenina.BackColor = SystemColors.Control;
+            btnChance3.BackColor = SystemColors.Control;
+            btnProf.BackColor = SystemColors.Control;
+            btnGoToJail.BackColor = SystemColors.Control;
+            btnTverskaya.BackColor = SystemColors.Control;
+            btnChance4.BackColor = SystemColors.Control;
+            btnSovetskaya.BackColor = SystemColors.Control;
+            #endregion
+            playerPosition();
         }
 
         // Добавление дома по щелчку.
-
+        #region
         private void btnSovetskaya_Click(object sender, EventArgs e)
         {
             spaceArray[playerArray[currentPlayer].getBoardSpace()].addHouse(
@@ -600,23 +651,23 @@ namespace Monopoly
                 currentPlayer, ref playerArray[currentPlayer]);
             rent1.Text = spaceArray[1].getRent().ToString();
         }
+        #endregion
 
-        private void webButtonExit_Click(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
         {
-            DialogResult dialog = MessageBox.Show("Вы уверены, что хотите выйти из игры?", "Выход", MessageBoxButtons.YesNo);
+            DialogResult dialog = MessageBox.Show("Вы уверены, что хотите выйти из игры?", "Выход", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dialog == System.Windows.Forms.DialogResult.Yes)
                 Application.Exit();
         }
 
-        //private void materialRaisedButton2_Click(object sender, EventArgs e)
-        //{
-        //    DialogResult dialog = MessageBox.Show("Вы уверены, что хотите завершить текущую игру и выйти?", "Выход", MessageBoxButtons.YesNo);
-        //    if (dialog == System.Windows.Forms.DialogResult.Yes)
-        //    {
-        //        Application.Exit();
-        //    }
 
-        //}
+        private void btnRules_Click(object sender, EventArgs e)
+        {
+            DialogResult dialog = MessageBox.Show("Правила игры откроются в текстовом редакторе MS Office Word.  Желаете продолжить?", "Правила игры", MessageBoxButtons.YesNo,MessageBoxIcon.Question );
+            if (dialog == System.Windows.Forms.DialogResult.Yes)
+            System.Diagnostics.Process.Start("Правила игры Monopoly LITE.docx");
+        }
+
 
     }
 }
