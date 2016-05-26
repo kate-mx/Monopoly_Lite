@@ -234,7 +234,7 @@ namespace Monopoly
             checkLoss();
             winner = checkWin();
 
-            // If only 1 player left.
+            // если остался один игрок
             // 
             if (winner != -1)
             {
@@ -309,6 +309,7 @@ namespace Monopoly
         private void btnRollDiceJail()
         {
             if (!playerArray[currentPlayer].getInJail()) return;
+            playerPosition();
 
             dice.RollDice();
 
@@ -320,6 +321,7 @@ namespace Monopoly
             else
                 MessageBox.Show("Дубля не выпало!");
             playerArray[currentPlayer].move(dice.GetTotal(), dice.isDoubles());
+            
         }
 
         /// <summary>
@@ -341,6 +343,7 @@ namespace Monopoly
 
             playerArray[currentPlayer].move(dice.GetTotal(), dice.isDoubles());
 
+            playerPosition();
             // Выполнение действий на поле (пространстве)
             int rent = spaceArray[playerArray[currentPlayer].getBoardSpace()].doAction(ref currentPlayer, ref playerArray[currentPlayer]);
 
@@ -350,7 +353,7 @@ namespace Monopoly
 
             currentPlayer = tempPlayer;
              
-            playerPosition();
+            
         }
 
         /// <summary>
@@ -387,8 +390,10 @@ namespace Monopoly
                 {
                     QPlayers = Int32.Parse(QPlayersIn.Text);
 
-                    if (QPlayers == 2) { lblP3Turn.Visible = false; lblP4Turn.Visible = false; }
-
+                    if (QPlayers == 2) { lblP3Turn.Visible = false; lblP4Turn.Visible = false; 
+                                        lblPlayer3M.Visible = false; lblPlayer4M.Visible = false;
+                                        txtPlayer3M.Visible = false; txtPlayer4M.Visible = false;}
+                    if (QPlayers == 3) { lblP4Turn.Visible = false; lblPlayer4M.Visible = false; txtPlayer4M.Visible = false; }
                     if (QPlayers <= 1 || QPlayers >= 5)
                     {
                         MessageBox.Show("Введите число в интервале 2 - 4!");
@@ -548,6 +553,10 @@ namespace Monopoly
 
             QPlayersIn.Text = "";
             QPlayersIn.ReadOnly = false;
+
+            lblP3Turn.Visible = true; lblP4Turn.Visible = true;
+            lblPlayer3M.Visible = true; lblPlayer4M.Visible = true;
+            txtPlayer3M.Visible = true; txtPlayer4M.Visible = true;
 
             rent1.Text = "12"; rent3.Text = "25";
             rent5.Text = "37"; rent7.Text = "50";
