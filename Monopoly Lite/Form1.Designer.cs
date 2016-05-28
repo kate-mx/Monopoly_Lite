@@ -151,6 +151,7 @@
             this.btnExit = new Skin.Controles.WebButton();
             this.btnRules = new Skin.Controles.WebButton();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.historyBox = new System.Windows.Forms.ListBox();
             this.grpStats.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -634,7 +635,7 @@
             this.grpStats.Size = new System.Drawing.Size(323, 212);
             this.grpStats.TabIndex = 43;
             this.grpStats.TabStop = false;
-            this.grpStats.Text = "Текущя статистика";
+            this.grpStats.Text = "Текущая статистика";
             // 
             // txtPlayer4M
             // 
@@ -1470,7 +1471,7 @@
             this.btnRules.ForeColor = System.Drawing.Color.White;
             this.btnRules.IconShow = true;
             this.btnRules.IconType = Skin.IconType.file_text_o;
-            this.btnRules.Location = new System.Drawing.Point(1152, 292);
+            this.btnRules.Location = new System.Drawing.Point(1152, 289);
             this.btnRules.MouseLocation = new System.Drawing.Point(0, 0);
             this.btnRules.MouseState = Skin.MouseState.HOVER;
             this.btnRules.Name = "btnRules";
@@ -1484,12 +1485,22 @@
             // 
             this.timer1.Interval = 1000;
             // 
+            // historyBox
+            // 
+            this.historyBox.FormattingEnabled = true;
+            this.historyBox.ItemHeight = 16;
+            this.historyBox.Location = new System.Drawing.Point(607, 91);
+            this.historyBox.Name = "historyBox";
+            this.historyBox.Size = new System.Drawing.Size(302, 36);
+            this.historyBox.TabIndex = 83;
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1500, 768);
+            this.ClientSize = new System.Drawing.Size(1388, 801);
             this.ControlBoxColor = Skin.Colores.Organico.Marron;
+            this.Controls.Add(this.historyBox);
             this.Controls.Add(this.btnRules);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.panel9);
@@ -1546,6 +1557,7 @@
             this.Controls.SetChildIndex(this.panel9, 0);
             this.Controls.SetChildIndex(this.btnExit, 0);
             this.Controls.SetChildIndex(this.btnRules, 0);
+            this.Controls.SetChildIndex(this.historyBox, 0);
             this.grpStats.ResumeLayout(false);
             this.grpStats.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -1725,6 +1737,7 @@
         private Skin.Controles.WebButton btnExit;
         private Skin.Controles.WebButton btnRules;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ListBox historyBox;
     }
 }
 

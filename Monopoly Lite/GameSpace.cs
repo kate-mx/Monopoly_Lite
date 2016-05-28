@@ -21,7 +21,7 @@ namespace Monopoly
         public GameSpace()
         {
         }
-
+        public string History;
         /// <summary>
         /// Определяет тип клетки
         /// </summary>

@@ -54,3 +54,25 @@ D:\Users\Екатерина\Учеба\4й семестр\ООП\курсова�
 D:\Users\Екатерина\Учеба\4й семестр\ООП\курсовая\temp\Monopoly Lite\obj\Debug\Monopoly_Lite.Properties.Resources.resources
 D:\Users\Екатерина\Учеба\4й семестр\ООП\курсовая\temp\Monopoly Lite\obj\Debug\Monopoly Lite.csproj.GenerateResource.Cache
 D:\Users\Екатерина\Учеба\4й семестр\ООП\курсовая\temp\Monopoly Lite\obj\Debug\Monopoly Lite.csprojResolveAssemblyReference.cache
+C:\Users\Senya\Desktop\Monopoly\Monopoly Lite\bin\Debug\Monopoly Lite.exe.config
+C:\Users\Senya\Desktop\Monopoly\Monopoly Lite\obj\Debug\Monopoly Lite.exe
+C:\Users\Senya\Desktop\Monopoly\Monopoly Lite\obj\Debug\Monopoly Lite.pdb
+C:\Users\Senya\Desktop\Monopoly\Monopoly Lite\bin\Debug\Monopoly Lite.exe
+C:\Users\Senya\Desktop\Monopoly\Monopoly Lite\bin\Debug\Monopoly Lite.pdb
+C:\Users\Senya\Desktop\Monopoly\Monopoly Lite\bin\Debug\MaterialSkin.dll
+C:\Users\Senya\Desktop\Monopoly\Monopoly Lite\bin\Debug\Skin.dll
+C:\Users\Senya\Desktop\Monopoly\Monopoly Lite\obj\Debug\Monopoly Lite.csprojResolveAssemblyReference.cache
+C:\Users\Senya\Desktop\Monopoly\Monopoly Lite\obj\Debug\Monopoly.Form1.resources
+C:\Users\Senya\Desktop\Monopoly\Monopoly Lite\obj\Debug\Monopoly_Lite.Properties.Resources.resources
+C:\Users\Senya\Desktop\Monopoly\Monopoly Lite\obj\Debug\Monopoly Lite.csproj.GenerateResource.Cache
+D:\Users\Екатерина\Учеба\4й семестр\ООП\курсовая\monopolyl\monopolyl\Monopoly Lite\bin\Debug\Monopoly Lite.exe.config
+D:\Users\Екатерина\Учеба\4й семестр\ООП\курсовая\monopolyl\monopolyl\Monopoly Lite\obj\Debug\Monopoly Lite.exe
+D:\Users\Екатерина\Учеба\4й семестр\ООП\курсовая\monopolyl\monopolyl\Monopoly Lite\obj\Debug\Monopoly Lite.pdb
+D:\Users\Екатерина\Учеба\4й семестр\ООП\курсовая\monopolyl\monopolyl\Monopoly Lite\bin\Debug\Monopoly Lite.exe
+D:\Users\Екатерина\Учеба\4й семестр\ООП\курсовая\monopolyl\monopolyl\Monopoly Lite\bin\Debug\Monopoly Lite.pdb
+D:\Users\Екатерина\Учеба\4й семестр\ООП\курсовая\monopolyl\monopolyl\Monopoly Lite\bin\Debug\MaterialSkin.dll
+D:\Users\Екатерина\Учеба\4й семестр\ООП\курсовая\monopolyl\monopolyl\Monopoly Lite\bin\Debug\Skin.dll
+D:\Users\Екатерина\Учеба\4й семестр\ООП\курсовая\monopolyl\monopolyl\Monopoly Lite\obj\Debug\Monopoly Lite.csprojResolveAssemblyReference.cache
+D:\Users\Екатерина\Учеба\4й семестр\ООП\курсовая\monopolyl\monopolyl\Monopoly Lite\obj\Debug\Monopoly.Form1.resources
+D:\Users\Екатерина\Учеба\4й семестр\ООП\курсовая\monopolyl\monopolyl\Monopoly Lite\obj\Debug\Monopoly_Lite.Properties.Resources.resources
+D:\Users\Екатерина\Учеба\4й семестр\ООП\курсовая\monopolyl\monopolyl\Monopoly Lite\obj\Debug\Monopoly Lite.csproj.GenerateResource.Cache

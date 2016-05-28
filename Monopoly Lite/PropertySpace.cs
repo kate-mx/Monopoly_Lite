@@ -55,9 +55,6 @@ namespace Monopoly
                 numHouses++;
                 rent += cost / 2;
                 curPlayer.updateMoney(-cost/2);
-                
-
-               
             }
                 return;
             }
@@ -124,10 +121,10 @@ namespace Monopoly
             // Свободный объект
             else if (ownedBy == -1)
             {
-               
                 DialogResult dr = MessageBox.Show("Желаете приобрести эту улицу?","Покупка улицы", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dr == DialogResult.Yes)
                     buyProperty(playerNum, ref curPlayer);
+                History = "Игрок №" + playerNum + " приобрел улицу " + curPlayer;
                 return 0;
             }
 

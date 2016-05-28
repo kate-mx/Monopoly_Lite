@@ -40,6 +40,10 @@ namespace Monopoly
         // Индекс победителя.
         int winner;
 
+        // Цвета и порядковые номера игроков
+        string[] ColorPlayer = new string[] { "'Зеленый'", "'Синий'", "'Красный'", "'Фиолетовый'" };
+
+
         public Form1()
         {
             InitializeComponent();
@@ -155,17 +159,13 @@ namespace Monopoly
             switch (currentPlayer)
             {
                 case 0:
-                    lblP1Turn.ForeColor = Color.Green;
-                    break;
+                    lblP1Turn.ForeColor = Color.Green; break;
                 case 1:
-                    lblP2Turn.ForeColor = Color.Blue;
-                    break;
+                    lblP2Turn.ForeColor = Color.Blue; break;
                 case 2:
-                    lblP3Turn.ForeColor = Color.Red;
-                    break;
+                    lblP3Turn.ForeColor = Color.Red; break;
                 case 3:
-                    lblP4Turn.ForeColor = Color.Violet;
-                    break;
+                    lblP4Turn.ForeColor = Color.Violet; break;
                 default:
                     break;
             }
@@ -177,9 +177,13 @@ namespace Monopoly
         private void checkLoss()
         {
             for (int i = 0; i < QPlayers; i++)
+            {
                 if (playerArray[i].getMoney() <= 0)
-
+                {
                     playerArray[i].setGameOver(true);
+                    historyBox.Items.Add("Игрок №" + i + " обяьвлен банкротом");
+                }
+            }
             
         }
 
@@ -234,7 +238,7 @@ namespace Monopoly
             checkLoss();
             winner = checkWin();
 
-            // если остался один игрок
+            // If only 1 player left.
             // 
             if (winner != -1)
             {
@@ -283,6 +287,7 @@ namespace Monopoly
                 btnRollDice.Visible = false;
                 pictureDice.Visible = false;
                 updateGame();
+                historyBox.Items.Add("Игрок №" + currentPlayer + " отправляется в тюрьму");
                 return;
             }
 
@@ -297,9 +302,11 @@ namespace Monopoly
                 MonopolyMan2.Visible = true;
                 MonopolyMan1.Visible = false;
                 btnRollDice.Visible = false;
-                pictureDice.Visible = false;//
+                pictureDice.Visible = false;
+               
             }
-
+            else
+                historyBox.Items.Add(ColorPlayer[currentPlayer] + "игрок выбросил дубли, он ходит еще раз");
 
         }
 
@@ -309,7 +316,6 @@ namespace Monopoly
         private void btnRollDiceJail()
         {
             if (!playerArray[currentPlayer].getInJail()) return;
-            playerPosition();
 
             dice.RollDice();
 
@@ -321,7 +327,6 @@ namespace Monopoly
             else
                 MessageBox.Show("Дубля не выпало!");
             playerArray[currentPlayer].move(dice.GetTotal(), dice.isDoubles());
-            
         }
 
         /// <summary>
@@ -330,12 +335,12 @@ namespace Monopoly
         public void btnRollDiceFree()
         {
             if (playerArray[currentPlayer].getInJail()) return;
-
+            
             dice.RollDice();
 
             txtA.Text = dice.getNumber(1).ToString();
             txtB.Text = dice.getNumber(2).ToString();
-
+            historyBox.Items.Add(""+ ColorPlayer[currentPlayer]+ " игрок бросил кости");
 
             int tempPlayer = currentPlayer;
             
@@ -343,7 +348,6 @@ namespace Monopoly
 
             playerArray[currentPlayer].move(dice.GetTotal(), dice.isDoubles());
 
-            playerPosition();
             // Выполнение действий на поле (пространстве)
             int rent = spaceArray[playerArray[currentPlayer].getBoardSpace()].doAction(ref currentPlayer, ref playerArray[currentPlayer]);
 
@@ -353,7 +357,7 @@ namespace Monopoly
 
             currentPlayer = tempPlayer;
              
-            
+            playerPosition();
         }
 
         /// <summary>
@@ -390,10 +394,8 @@ namespace Monopoly
                 {
                     QPlayers = Int32.Parse(QPlayersIn.Text);
 
-                    if (QPlayers == 2) { lblP3Turn.Visible = false; lblP4Turn.Visible = false; 
-                                        lblPlayer3M.Visible = false; lblPlayer4M.Visible = false;
-                                        txtPlayer3M.Visible = false; txtPlayer4M.Visible = false;}
-                    if (QPlayers == 3) { lblP4Turn.Visible = false; lblPlayer4M.Visible = false; txtPlayer4M.Visible = false; }
+                    if (QPlayers == 2) { lblP3Turn.Visible = false; lblP4Turn.Visible = false; }
+
                     if (QPlayers <= 1 || QPlayers >= 5)
                     {
                         MessageBox.Show("Введите число в интервале 2 - 4!");
@@ -554,14 +556,13 @@ namespace Monopoly
             QPlayersIn.Text = "";
             QPlayersIn.ReadOnly = false;
 
-            lblP3Turn.Visible = true; lblP4Turn.Visible = true;
-            lblPlayer3M.Visible = true; lblPlayer4M.Visible = true;
-            txtPlayer3M.Visible = true; txtPlayer4M.Visible = true;
-
             rent1.Text = "12"; rent3.Text = "25";
             rent5.Text = "37"; rent7.Text = "50";
             rent9.Text = "62"; rent11.Text = "75";
             rent13.Text = "87"; rent15.Text = "100";
+
+            historyBox.Items.Clear();
+            historyBox.Items.Add("Для начала новой игры нажмите кнопку 'Новая игра'");
         }
 
 
@@ -605,10 +606,9 @@ namespace Monopoly
         #region
         private void btnSovetskaya_Click(object sender, EventArgs e)
         {
-            spaceArray[playerArray[currentPlayer].getBoardSpace()].addHouse(
-                currentPlayer, ref playerArray[currentPlayer]);
+            spaceArray[playerArray[currentPlayer].getBoardSpace()].addHouse(currentPlayer, ref playerArray[currentPlayer]);
             rent15.Text = spaceArray[15].getRent().ToString();
-            
+            historyBox.Items.Add("" + ColorPlayer[currentPlayer] + " игрок построил дом на Советской улице");
         }
 
         private void btnTverskaya_Click(object sender, EventArgs e)
@@ -616,7 +616,7 @@ namespace Monopoly
             spaceArray[playerArray[currentPlayer].getBoardSpace()].addHouse(
                 currentPlayer, ref playerArray[currentPlayer]);
             rent13.Text = spaceArray[13].getRent().ToString();
-            
+            historyBox.Items.Add("" + ColorPlayer[currentPlayer] + " игрок построил дом на Тверской улице");
         }
 
         private void btnProf_Click(object sender, EventArgs e)
@@ -624,6 +624,7 @@ namespace Monopoly
             spaceArray[playerArray[currentPlayer].getBoardSpace()].addHouse(
                 currentPlayer, ref playerArray[currentPlayer]);
             rent11.Text = spaceArray[11].getRent().ToString();
+            historyBox.Items.Add("" + ColorPlayer[currentPlayer] + " игрок построил дом на Профсоюзной улице");
         }
 
         private void btnLenina_Click(object sender, EventArgs e)
@@ -631,6 +632,7 @@ namespace Monopoly
             spaceArray[playerArray[currentPlayer].getBoardSpace()].addHouse(
                 currentPlayer, ref playerArray[currentPlayer]);
             rent9.Text = spaceArray[9].getRent().ToString();
+            historyBox.Items.Add("" + ColorPlayer[currentPlayer] + " игрок построил дом на улице Ленина");
         }
 
         private void btnYubiley_Click(object sender, EventArgs e)
@@ -638,6 +640,7 @@ namespace Monopoly
             spaceArray[playerArray[currentPlayer].getBoardSpace()].addHouse(
                 currentPlayer, ref playerArray[currentPlayer]);
             rent7.Text = spaceArray[7].getRent().ToString();
+            historyBox.Items.Add("" + ColorPlayer[currentPlayer] + "игрок построил дом на Юбилейной улице");
         }
 
         private void btnGagarina_Click(object sender, EventArgs e)
@@ -645,6 +648,7 @@ namespace Monopoly
             spaceArray[playerArray[currentPlayer].getBoardSpace()].addHouse(
                 currentPlayer, ref playerArray[currentPlayer]);
             rent5.Text = spaceArray[5].getRent().ToString();
+            historyBox.Items.Add("" + ColorPlayer[currentPlayer] + " игрок построил дом на улице Гагарина");
         }
 
         private void btnPushkina_Click(object sender, EventArgs e)
@@ -652,6 +656,7 @@ namespace Monopoly
             spaceArray[playerArray[currentPlayer].getBoardSpace()].addHouse(
                 currentPlayer, ref playerArray[currentPlayer]);
             rent3.Text = spaceArray[3].getRent().ToString();
+            historyBox.Items.Add("" + ColorPlayer[currentPlayer] + " игрок построил дом на улице Пушкина");
         }
 
         private void btnSvobody_Click(object sender, EventArgs e)
@@ -659,6 +664,7 @@ namespace Monopoly
             spaceArray[playerArray[currentPlayer].getBoardSpace()].addHouse(
                 currentPlayer, ref playerArray[currentPlayer]);
             rent1.Text = spaceArray[1].getRent().ToString();
+            historyBox.Items.Add("" + ColorPlayer[currentPlayer] + " игрок построил дом на улице Свободы");
         }
         #endregion
 
