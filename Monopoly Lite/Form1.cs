@@ -214,9 +214,36 @@ namespace Monopoly
         /// </summary>
         private void gameOver()
         {
-            MessageBox.Show("Поздравляем Игрока " + (winner + 1).ToString() + ", Вы выйграли!");
+            MessageBox.Show("Поздравляем Игрока №" + (winner + 1).ToString() + ", Вы выйграли!");
         }
+        /// <summary>
+        /// Выявляет победителя по критерию количества денег
+        /// </summary>
+        private int CheckWinner2000()
+        {
+            if (txtPlayer1M.Text != "" && Convert.ToInt32(txtPlayer1M.Text) >= 2000)
+            {
+                winner = 0;
+                return winner;
+            }
+            if (txtPlayer2M.Text != "" && Convert.ToInt32(txtPlayer2M.Text) >= 2000)
+            {
+                winner = 1;
+                return winner;
+            }
+            if (txtPlayer3M.Text != "" && Convert.ToInt32(txtPlayer3M.Text) >= 2000)
+            {
+                winner = 2;
+                return winner;
+            }
+            if (txtPlayer4M.Text != "" && Convert.ToInt32(txtPlayer4M.Text) >= 2000)
+            {
+                winner = 3;
+                return winner;
+            }
 
+            return -1;
+        }
         /// <summary>
         /// Обновляет статистику игры и проверяет победителя для завершения игры.
         /// </summary>
@@ -237,6 +264,7 @@ namespace Monopoly
             updateStats();
             checkLoss();
             winner = checkWin();
+            winner = CheckWinner2000();
 
             // If only 1 player left.
             // 
