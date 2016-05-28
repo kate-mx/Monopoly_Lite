@@ -271,7 +271,7 @@ namespace Monopoly
             if (winner != -1)
             {
                 gameOver();
-                this.Close();
+                backToStart();
             }
 
             changeTurn();
@@ -356,7 +356,6 @@ namespace Monopoly
                 MessageBox.Show("Дубля не выпало!");
             playerArray[currentPlayer].move(dice.GetTotal(), dice.isDoubles());
         }
-
         /// <summary>
         /// Бросок костей для игрока, который свободен (не в тюрьме).
         /// </summary>
@@ -368,7 +367,6 @@ namespace Monopoly
 
             txtA.Text = dice.getNumber(1).ToString();
             txtB.Text = dice.getNumber(2).ToString();
-            historyBox.Items.Add(""+ ColorPlayer[currentPlayer]+ " игрок бросил кости");
 
             int tempPlayer = currentPlayer;
             
@@ -382,7 +380,10 @@ namespace Monopoly
 
             // Обновляем деньги владельца  клетки
             playerArray[currentPlayer].updateMoney(rent);
-
+            if (rent != 0)
+            {
+                historyBox.Items.Add("" + ColorPlayer[currentPlayer] + " игрок заплатил ренту в размере: " + rent);
+            }
             currentPlayer = tempPlayer;
              
             playerPosition();
