@@ -310,6 +310,7 @@ namespace Monopoly
             {
                 playerArray[currentPlayer].setJustInJail(false);
                 btnEndTurn.Visible = true;
+                lblEndTurn.Visible = lblEndTurn1.Visible = true;
                 MonopolyMan2.Visible = true;
                 MonopolyMan1.Visible = false;
                 btnRollDice.Visible = false;
@@ -327,6 +328,7 @@ namespace Monopoly
             if (!dice.isDoubles())
             {
                 btnEndTurn.Visible = true;
+                lblEndTurn.Visible = lblEndTurn1.Visible = true;
                 MonopolyMan2.Visible = true;
                 MonopolyMan1.Visible = false;
                 btnRollDice.Visible = false;
@@ -564,6 +566,7 @@ namespace Monopoly
             btnSovetskaya.BackColor = SystemColors.Control;
 
             btnRollDice.Visible = false;
+            lblEndTurn.Visible = lblEndTurn1.Visible = false;
             pictureDice.Visible = false;//
             btnEndTurn.Visible = false;
             MonopolyMan2.Visible = false;
@@ -605,6 +608,7 @@ namespace Monopoly
             currentPlayer++;
             updateGame();
             btnEndTurn.Visible = false;
+            lblEndTurn.Visible = lblEndTurn1.Visible = false;
             MonopolyMan2.Visible = false;
             MonopolyMan1.Visible = true;
             btnRollDice.Visible = true;
